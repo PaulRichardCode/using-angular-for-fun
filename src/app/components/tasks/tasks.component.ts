@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TASKS } from '../../mock-task';
+import { TaskService } from '../../services/task.service';
 import { Task } from '../../Task';
 
 @Component({
@@ -8,5 +8,5 @@ import { Task } from '../../Task';
   styleUrl: './tasks.component.css',
 })
 export class TasksComponent {
-  tasks: Task[] = TASKS;
+  tasks: Task[] = [];
 }
