@@ -12,6 +12,5 @@ export class TaskService {
   getTasks(): Observable<Task[]> {
     const tasks = of(TASKS);
     return tasks;
-    //jghg
   }
 }
